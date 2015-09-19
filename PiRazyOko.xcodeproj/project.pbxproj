@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D36CED631BADA2E5009C963E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CED621BADA2E5009C963E /* AppDelegate.swift */; };
+		D36CED651BADA2E5009C963E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CED641BADA2E5009C963E /* ViewController.swift */; };
+		D36CED681BADA2E5009C963E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36CED661BADA2E5009C963E /* Main.storyboard */; };
+		D36CED6A1BADA2E5009C963E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36CED691BADA2E5009C963E /* Assets.xcassets */; };
+		D36CED6D1BADA2E5009C963E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36CED6B1BADA2E5009C963E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D36CED5F1BADA2E5009C963E /* PiRazyOko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiRazyOko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D36CED621BADA2E5009C963E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D36CED641BADA2E5009C963E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D36CED671BADA2E5009C963E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D36CED691BADA2E5009C963E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D36CED6C1BADA2E5009C963E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D36CED6E1BADA2E5009C963E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D36CED5C1BADA2E5009C963E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D36CED561BADA2E5009C963E = {
+			isa = PBXGroup;
+			children = (
+				D36CED611BADA2E5009C963E /* PiRazyOko */,
+				D36CED601BADA2E5009C963E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D36CED601BADA2E5009C963E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D36CED5F1BADA2E5009C963E /* PiRazyOko.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D36CED611BADA2E5009C963E /* PiRazyOko */ = {
+			isa = PBXGroup;
+			children = (
+				D36CED621BADA2E5009C963E /* AppDelegate.swift */,
+				D36CED641BADA2E5009C963E /* ViewController.swift */,
+				D36CED661BADA2E5009C963E /* Main.storyboard */,
+				D36CED691BADA2E5009C963E /* Assets.xcassets */,
+				D36CED6B1BADA2E5009C963E /* LaunchScreen.storyboard */,
+				D36CED6E1BADA2E5009C963E /* Info.plist */,
+			);
+			path = PiRazyOko;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D36CED5E1BADA2E5009C963E /* PiRazyOko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D36CED711BADA2E5009C963E /* Build configuration list for PBXNativeTarget "PiRazyOko" */;
+			buildPhases = (
+				D36CED5B1BADA2E5009C963E /* Sources */,
+				D36CED5C1BADA2E5009C963E /* Frameworks */,
+				D36CED5D1BADA2E5009C963E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PiRazyOko;
+			productName = PiRazyOko;
+			productReference = D36CED5F1BADA2E5009C963E /* PiRazyOko.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D36CED571BADA2E5009C963E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jan Kraus Stanko";
+				TargetAttributes = {
+					D36CED5E1BADA2E5009C963E = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = D36CED5A1BADA2E5009C963E /* Build configuration list for PBXProject "PiRazyOko" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D36CED561BADA2E5009C963E;
+			productRefGroup = D36CED601BADA2E5009C963E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D36CED5E1BADA2E5009C963E /* PiRazyOko */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D36CED5D1BADA2E5009C963E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36CED6D1BADA2E5009C963E /* LaunchScreen.storyboard in Resources */,
+				D36CED6A1BADA2E5009C963E /* Assets.xcassets in Resources */,
+				D36CED681BADA2E5009C963E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D36CED5B1BADA2E5009C963E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36CED651BADA2E5009C963E /* ViewController.swift in Sources */,
+				D36CED631BADA2E5009C963E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D36CED661BADA2E5009C963E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D36CED671BADA2E5009C963E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D36CED6B1BADA2E5009C963E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D36CED6C1BADA2E5009C963E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D36CED6F1BADA2E5009C963E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D36CED701BADA2E5009C963E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D36CED721BADA2E5009C963E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PiRazyOko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.jankraus.PiRazyOko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D36CED731BADA2E5009C963E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PiRazyOko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.jankraus.PiRazyOko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D36CED5A1BADA2E5009C963E /* Build configuration list for PBXProject "PiRazyOko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D36CED6F1BADA2E5009C963E /* Debug */,
+				D36CED701BADA2E5009C963E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D36CED711BADA2E5009C963E /* Build configuration list for PBXNativeTarget "PiRazyOko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D36CED721BADA2E5009C963E /* Debug */,
+				D36CED731BADA2E5009C963E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D36CED571BADA2E5009C963E /* Project object */;
+}
