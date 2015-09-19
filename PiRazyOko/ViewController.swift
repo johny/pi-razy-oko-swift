@@ -19,6 +19,22 @@ class ViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
+  
+  @IBAction func showAlert() {
+    
+    // define alert controller
+    let alert = UIAlertController(title: "Hello World", message: "This is my first alert app!", preferredStyle: .Alert)
+    
+    // define alert action button
+    let action = UIAlertAction(title: "Ok, great!", style: .Default, handler: nil)
+    
+    // connect button to alert
+    alert.addAction(action)
+    
+    // execute
+    presentViewController(alert, animated: true, completion: nil)
+    
+  }
 
 
 }
