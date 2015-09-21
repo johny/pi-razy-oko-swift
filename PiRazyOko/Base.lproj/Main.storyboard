@@ -19,6 +19,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="HLo-zc-0n7">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                             </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deF-RK-OvP">
+                                <rect key="frame" x="20" y="20" width="528" height="242"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSC-hc-h5O">
                                 <rect key="frame" x="257" y="270" width="54" height="30"/>
                                 <state key="normal" title="Zamknij"/>
@@ -26,20 +30,14 @@
                                     <action selector="closeView" destination="bv9-nj-h79" eventType="touchUpInside" id="7aX-6d-ZLw"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cre-RL-SZq">
-                                <rect key="frame" x="20" y="28" width="528" height="222"/>
-                                <string key="text">*** Pi-Razy-Oko ***
-
-Pi-Razy-Oko to prosta gra sprawdzająca Twoje wyczucie ;-)  Ustaw slider jak najbliżej wylosowanej wartości. Im bliżej jesteś tym więcej punktów dla Ciebie!
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="webView" destination="deF-RK-OvP" id="AF6-4H-nJp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vg-dx-c7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
