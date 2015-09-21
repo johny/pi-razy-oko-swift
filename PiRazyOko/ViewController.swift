@@ -26,8 +26,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    startNewRound()
-    updateLabels()
+    resetGame()
     
   }
   
@@ -58,27 +57,43 @@ class ViewController: UIViewController {
   @IBAction func showAlert() {
     
     let difference = abs(currentValue - targetValue)
-    let points = 1000 - difference
+    var points = 1000 - difference
+    
+    var alertTitle: String
+    
+    if difference == 0 {
+      alertTitle = "Wow! Perfekcyjnie!"
+      points += 100
+    } else if difference < 10 {
+      alertTitle = "Extra! Prawie to masz!"
+    } else if difference < 50 {
+      alertTitle = "Brawo! Naprawdę dobrze!"
+    } else if difference < 100 {
+      alertTitle = "Ok! Dobry wynik!"
+    } else {
+      alertTitle = "Może następnym razem..."
+    }
     
     playerScore += points
     
-    let message = "Twój wynik: \(points)!"
+    let message = "Ustawiono: \(currentValue)\n"
+                + "Zdobyte punkty: \(points)"
     
     // define alert controller
-    let alert = UIAlertController(title: "Sprawdzenie", message: message, preferredStyle: .Alert)
+    let alert = UIAlertController(title: alertTitle, message: message, preferredStyle: .Alert)
     
     // define alert action button
-    let action = UIAlertAction(title: "Ok, jeszcze raz!", style: .Default, handler: nil)
+    let action = UIAlertAction(title: "Jeszcze raz!", style: .Default,
+                               handler: { action in
+                                 self.startNewRound()
+                                 self.updateLabels()
+                               })
     
     // connect button to alert
     alert.addAction(action)
     
     // execute
     presentViewController(alert, animated: true, completion: nil)
-    
-    // reset round
-    startNewRound()
-    updateLabels()
     
   }
   
@@ -90,6 +105,17 @@ class ViewController: UIViewController {
     
   }
   
+  
+  @IBAction func resetGame() {
+    
+    currentRound = 0
+    playerScore = 0
+    
+    
+    startNewRound()
+    updateLabels()
+    
+  }
 
 
 }
