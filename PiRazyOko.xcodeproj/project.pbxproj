@@ -12,6 +12,7 @@
 		D36CED681BADA2E5009C963E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36CED661BADA2E5009C963E /* Main.storyboard */; };
 		D36CED6A1BADA2E5009C963E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36CED691BADA2E5009C963E /* Assets.xcassets */; };
 		D36CED6D1BADA2E5009C963E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36CED6B1BADA2E5009C963E /* LaunchScreen.storyboard */; };
+		D3A74D921BB022B400409B9B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A74D911BB022B400409B9B /* AboutViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D36CED691BADA2E5009C963E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D36CED6C1BADA2E5009C963E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D36CED6E1BADA2E5009C963E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A74D911BB022B400409B9B /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				D36CED621BADA2E5009C963E /* AppDelegate.swift */,
 				D36CED641BADA2E5009C963E /* ViewController.swift */,
 				D36CED661BADA2E5009C963E /* Main.storyboard */,
+				D3A74D911BB022B400409B9B /* AboutViewController.swift */,
 				D36CED691BADA2E5009C963E /* Assets.xcassets */,
 				D36CED6B1BADA2E5009C963E /* LaunchScreen.storyboard */,
 				D36CED6E1BADA2E5009C963E /* Info.plist */,
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A74D921BB022B400409B9B /* AboutViewController.swift in Sources */,
 				D36CED651BADA2E5009C963E /* ViewController.swift in Sources */,
 				D36CED631BADA2E5009C963E /* AppDelegate.swift in Sources */,
 			);
