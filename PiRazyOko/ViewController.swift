@@ -12,11 +12,15 @@ class ViewController: UIViewController {
   
   @IBOutlet weak var slider: UISlider!
   @IBOutlet weak var targetLabel: UILabel!
+  @IBOutlet weak var scoreLabel: UILabel!
+  @IBOutlet weak var roundLabel: UILabel!
   
-  let initialValue: Int = 500
+  let initialValue = 500
   
-  var currentValue: Int = 500
-  var targetValue: Int = 0
+  var currentRound = 0
+  var currentValue = 0
+  var targetValue = 0
+  var playerScore = 0
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,6 +39,7 @@ class ViewController: UIViewController {
   
   // reset values for new round
   func startNewRound() {
+    currentRound += 1
     currentValue = initialValue
     slider.value = Float(initialValue)
     targetValue = 1 + Int(arc4random_uniform(1000))
@@ -43,6 +48,8 @@ class ViewController: UIViewController {
   // update labels
   func updateLabels() {
     targetLabel.text = String(targetValue)
+    scoreLabel.text = String(playerScore)
+    roundLabel.text = String(currentRound)
   }
   
   
@@ -50,11 +57,15 @@ class ViewController: UIViewController {
   // handle touch on main button
   @IBAction func showAlert() {
     
-    let message = "Twoja wartość to \(currentValue)\n"
-                + "Docelowa wartość \(targetValue)"
+    let difference = abs(currentValue - targetValue)
+    let points = 1000 - difference
+    
+    playerScore += points
+    
+    let message = "Twój wynik: \(points)!"
     
     // define alert controller
-    let alert = UIAlertController(title: "Sprawdzenie:", message: message, preferredStyle: .Alert)
+    let alert = UIAlertController(title: "Sprawdzenie", message: message, preferredStyle: .Alert)
     
     // define alert action button
     let action = UIAlertAction(title: "Ok, jeszcze raz!", style: .Default, handler: nil)
