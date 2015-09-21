@@ -15,6 +15,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var scoreLabel: UILabel!
   @IBOutlet weak var roundLabel: UILabel!
   
+  @IBOutlet weak var actionButton: UIButton!
+  
   let initialValue = 500
   
   var currentRound = 0
@@ -27,6 +29,9 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
     
     resetGame()
+    
+    actionButton.layer.cornerRadius = 20.0
+    
     
   }
   
