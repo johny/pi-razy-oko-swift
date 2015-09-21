@@ -283,6 +283,7 @@
 				D36CED731BADA2E5009C963E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
