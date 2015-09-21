@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+  var currentValue: Int = 500
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -20,13 +22,16 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
+  // handle touch on main button
   @IBAction func showAlert() {
     
+    let message = "Twoja wartość to \(currentValue)"
+    
     // define alert controller
-    let alert = UIAlertController(title: "Hello World", message: "This is my first alert app!", preferredStyle: .Alert)
+    let alert = UIAlertController(title: "Sprawdzenie:", message: message, preferredStyle: .Alert)
     
     // define alert action button
-    let action = UIAlertAction(title: "Ok, great!", style: .Default, handler: nil)
+    let action = UIAlertAction(title: "Ok, jeszcze raz!", style: .Default, handler: nil)
     
     // connect button to alert
     alert.addAction(action)
@@ -35,6 +40,15 @@ class ViewController: UIViewController {
     presentViewController(alert, animated: true, completion: nil)
     
   }
+  
+  // handle slider change
+  @IBAction func sliderMoved(slider: UISlider) {
+    
+    // get the value from the slider, round it
+    currentValue = lroundf(slider.value)
+    
+  }
+  
 
 
 }
